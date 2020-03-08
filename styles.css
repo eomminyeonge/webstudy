@@ -1,4 +1,4 @@
-ody {
+body {
     /* 브라우저마다 기본 설정으로 BODY 요소에 margin과 padding의 값이 설정되어 있습니다. */
     /* 각각의 브라우저마다 BODY 요소가 다른 값을 가지고 있을 수 있으므로 우리가 일정하게 초기화해서 사용합니다. */
     /* 0은 단위를 사용하지 않습니다. */
@@ -24,13 +24,84 @@ ody {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .container-right {
-    /* width: 370px; */
-    /* height: 75px; */
-    /* float: left; */
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  header .sub-menu li a {
+    padding: 8px;
+    color: #3c4146;
+    font-size: 13px;
+    display: block;
+}
+  header .menu-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+  header .sign-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.float--left {
+    float: left;
+}
+.float--right {
+    float: right;
+}
+header .btn-group {
+    order: 2;
+    display: flex;
+}
+header .btn-group .sign-in {
+    margin-right: 4px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+.btn.btn--primary {
+    border: 1px solid #65b836;
+    color: #fff;
+    background: #55a532 linear-gradient(#91dd70, #55ae2e);
+}
+#search-form {
+    order: 1;
+    margin-right: 12px;
+}
+.input--text {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+}
+#search + [type="submit"] {
+    display: none;
+}
+header .sub-menu {
+    margin-right: 10px;
+    display: flex;
+}
+ul {
+    list-style: none;
+}
   .logo {
     margin-right: 5px;
     float: left; /* 수평정렬: 왼쪽부터차례대로; - logo와 menu를 수평 정렬하기 위해 사용되었습니다. 이 속성의 정확한 의미는 수평 정렬이 아니지만 쉽게 이해하도록 의역했습니다. */
@@ -56,7 +127,7 @@ ody {
     clear: both;
   }
 
-    
+  
     /* SECTION */
     .section {
     position: relative;

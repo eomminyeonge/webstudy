@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
+    <div class="body__container">
         <!-- Header -->
-        <div class="container clearfix">
+        <header class="section">
             <!-- 헤더 왼쪽 영역 -->
-            <div class="container-left clearfix"> 
+            <div class="inner clearfix">
+            <div class="menu-group float--left"> 
                 <div class="logo">
                     <img src="https://heropcode.github.io/GitHub-Responsive/img/logo.svg" alt="GitHub Logo">
                 </div>
@@ -21,33 +22,34 @@
                     <div class="menu-item">Business</div>
                     <div class="menu-item">Explore</div>
                 </div>
-            <!-- 헤더 오른쪽 영역 -->
-            <div class="container-right clearfix"> 
-                <!-- 서브메뉴 -->
-                <ul class="sub-menu clearfix">
-                    <li>
-                        <a href="#">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Support</a>
-                    </li>
-                </ul>
-                <!-- 검색바 -->
-                <form id="search-form" method="post" action> 
-                    <input id="search" class="input--text" type="text" placeholder="Search GitHub">
-                    <input type="submit">
-                </form>
-                <!-- 로그인,가입 버튼 -->
-                <div class="btn-group"> 
-                    <a class="btn sign-in" href="#">Sign in</a>
-                    <a class="btn btn--primary sign-up" href="#">Sign up</a>
+              <!-- 헤더 오른쪽 영역 -->
+              <div class="sign-group float--right toggle"> 
+                    <!-- 서브메뉴 -->
+                  <ul class="sub-menu clearfix">
+                      <li>
+                            <a href="#">Pricing</a>
+                       </li>
+                       <li>
+                           <a href="#">Blog</a>
+                      </li>
+                       <li>
+                           <a href="#">Support</a>
+                       </li>
+                 </ul>
+                  <!-- 검색바 -->
+                 <form id="search-form" method="post" action> 
+                        <input id="search" class="input--text" type="text" placeholder="Search GitHub">
+                     <input type="submit">
+                 </form>
+                  <!-- 로그인,가입 버튼 -->
+                  <div class="btn-group"> 
+                        <a class="btn sign-in" href="#">Sign in</a>
+                     <a class="btn btn--primary sign-up" href="#">Sign up</a>
+                  </div>
                 </div>
             </div>
             </div>
-        </div>
+        </header>
     </div>
     <!-- 메인 영역 -->
     <section class="section--visual">
